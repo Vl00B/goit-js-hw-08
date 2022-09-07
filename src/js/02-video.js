@@ -18,4 +18,6 @@ player.on(
   }, 1000)
 );
 
-player.setCurrentTime(localStorage.getItem(LOCALSTORAGE_KEY));
+if (localStorage.getItem(LOCALSTORAGE_KEY)) {
+  player.setCurrentTime(localStorage.getItem(LOCALSTORAGE_KEY));
+}
